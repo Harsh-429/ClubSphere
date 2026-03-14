@@ -1,2 +1,11 @@
-# ClubSphere
-ClubSphere is a role-based, real-time web platform designed to manage college clubs, faculty approvals, proposal pitching, fund negotiation, sponsor verification, room booking, and analytics — all in a centralized dark-theme governance system.
+
+  # ClubFlow Institutional Platform
+
+  This is a code bundle for ClubFlow Institutional Platform. The original project is available at https://www.figma.com/design/MlibDR218cXpMSB19Xtzlk/ClubFlow-Institutional-Platform.
+
+  ## Running the code
+
+  Run `npm i` to install the dependencies.
+
+  Run `npm run dev` to start the development server.
+  
