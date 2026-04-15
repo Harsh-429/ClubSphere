@@ -1,0 +1,50 @@
+# --------------------
+# Node.js
+# --------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --------------------
+# Python (venv)
+# --------------------
+.venv/
+venv/
+env/
+
+# --------------------
+# Build / dist (Vite)
+# --------------------
+dist/
+build/
+
+# --------------------
+# Cache / temp
+# --------------------
+.cache/
+*.log
+
+# --------------------
+# OS files
+# --------------------
+.DS_Store
+Thumbs.db
+
+# --------------------
+# IDE / Editor
+# --------------------
+.vscode/
+.idea/
+
+# --------------------
+# TypeScript
+# --------------------
+*.tsbuildinfo
+
+# --------------------
+# Env files (important)
+# --------------------
+.env
+.env.local
+.env.*.local
