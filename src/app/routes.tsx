@@ -6,18 +6,21 @@ import { Landing } from "./pages/Landing";
 import { ClubHeadOverview } from "./pages/ClubHead/ClubHeadOverview";
 import { ClubDashboard } from "./pages/Club/ClubDashboard";
 import { UpdateDetails } from "./pages/Club/UpdateDetails";
-import { BookRooms } from "./pages/Club/BookRooms";
-import { SubmitBills } from "./pages/Club/SubmitBills";
-import { PitchEvents } from "./pages/Club/PitchEvents";
-import { RequestFunds } from "./pages/Club/RequestFunds";
-import { ClubChat } from "./pages/Club/ClubChat";
 import { ClubVideoMeet } from "./pages/Club/ClubVideoMeet";
-import { AdminDashboard } from "./pages/Admin/AdminDashboard";
-import { ReviewSubmissions } from "./pages/Admin/ReviewSubmissions";
 import { ClubAnalytics } from "./pages/Admin/ClubAnalytics";
-import { ChatWithClubs } from "./pages/Admin/ChatWithClubs";
 import { AdminVideoMeet } from "./pages/Admin/AdminVideoMeet";
 import { StudentDashboard } from "./pages/Student/StudentDashboard";
+import { StudentMemberships } from "./pages/Student/StudentMemberships";
+import { BookRoomsLive } from "./pages/Club/BookRoomsLive";
+import { SubmitBillsLive } from "./pages/Club/SubmitBillsLive";
+import { PitchEventsLive } from "./pages/Club/PitchEventsLive";
+import { RequestFundsLive } from "./pages/Club/RequestFundsLive";
+import { ClubChatLive } from "./pages/Club/ClubChatLive";
+import { AdminDashboardLive } from "./pages/Admin/AdminDashboardLive";
+import { ReviewSubmissionsLive } from "./pages/Admin/ReviewSubmissionsLive";
+import { ChatWithClubsLive } from "./pages/Admin/ChatWithClubsLive";
+import { StudentEventsLive } from "./pages/Student/StudentEventsLive";
+import { ClubDetailsLive } from "./pages/Student/ClubDetailsLive";
 
 function AppLayout() {
   return (
@@ -51,26 +54,29 @@ export const router = createBrowserRouter([
       // Club Portal Routes
       { path: "club", element: <ClubDashboard /> },
       { path: "club/update-details", element: <UpdateDetails /> },
-      { path: "club/book-rooms", element: <BookRooms /> },
-      { path: "club/submit-bills", element: <SubmitBills /> },
-      { path: "club/pitch-events", element: <PitchEvents /> },
-      { path: "club/request-funds", element: <RequestFunds /> },
-      { path: "club/chat", element: <ClubChat /> },
+      { path: "club/book-rooms", element: <BookRoomsLive /> },
+      { path: "club/submit-bills", element: <SubmitBillsLive /> },
+      { path: "club/pitch-events", element: <PitchEventsLive /> },
+      { path: "club/request-funds", element: <RequestFundsLive /> },
+      { path: "club/chat", element: <ClubChatLive /> },
       { path: "club/video-meet", element: <ClubVideoMeet /> },
 
       // Admin Routes
-      { path: "admin", element: <AdminDashboard /> },
-      { path: "admin/review", element: <ReviewSubmissions /> },
+      { path: "admin", element: <AdminDashboardLive /> },
+      { path: "admin/review", element: <ReviewSubmissionsLive /> },
       { path: "admin/analytics", element: <ClubAnalytics /> },
-      { path: "admin/chat-clubs", element: <ChatWithClubs /> },
+      { path: "admin/chat-clubs", element: <ChatWithClubsLive /> },
       { path: "admin/video-meet", element: <AdminVideoMeet /> },
-      { path: "admin/review-funds", element: <ReviewSubmissions /> },
-      { path: "admin/review-events", element: <ReviewSubmissions /> },
-      { path: "admin/review-rooms", element: <ReviewSubmissions /> },
-      { path: "admin/review-bills", element: <ReviewSubmissions /> },
+      { path: "admin/review-funds", element: <ReviewSubmissionsLive /> },
+      { path: "admin/review-events", element: <ReviewSubmissionsLive /> },
+      { path: "admin/review-rooms", element: <ReviewSubmissionsLive /> },
+      { path: "admin/review-bills", element: <ReviewSubmissionsLive /> },
 
       // Student Routes
       { path: "student", element: <StudentDashboard /> },
+      { path: "student/events", element: <StudentEventsLive /> },
+      { path: "student/memberships", element: <StudentMemberships /> },
+      { path: "student/clubs/:id", element: <ClubDetailsLive /> },
       
       // Catch all
       { path: "*", element: <div className="p-12 text-center text-gray-500">Page not found</div> },

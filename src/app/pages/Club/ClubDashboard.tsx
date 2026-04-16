@@ -1,21 +1,20 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
 import {
-  Calendar,
-  DollarSign,
-  FileText,
+  AlertCircle,
   Building,
-  TrendingUp,
-  Users,
+  Calendar,
   CheckCircle,
   Clock,
-  AlertCircle,
+  DollarSign,
+  FileText,
   MessageCircle,
+  Users,
   Video,
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '../../components/ui/card';
 import { Button } from '../../components/ui/button';
-import { BackButton } from '../../components/BackButton';
+import { useLiveData } from '../../state/LiveDataContext';
 
 export function ClubDashboard() {
   const navigate = useNavigate();
